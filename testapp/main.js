@@ -37,7 +37,21 @@ console.log('main.js called');
 			}] */
 		};
 
-		$scope.someValue = 'Hello';	
+		$scope.getTotal = function() {
+			var total = 0;
+			for (var i = 0; i < $scope.anna.data.length; i++) {
+				var mins = $scope.anna.data[i].minutes;
+				//var mins = $scope.anna.data.minutes[i];
+				console.log(mins)
+				total += mins;
+			}
+			return total;
+		};
+
+		$scope.getLength = function() {
+			return $scope.anna.data.length;
+		};
+
 	} // end of MainCtrl
 
 	angular

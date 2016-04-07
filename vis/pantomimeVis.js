@@ -18,36 +18,55 @@ var data = [
     {"week": 4, "time": "PM", "date": "24-May-13", "month": "Su", "name": "Team Rubicon - OK Tornado Support", "category": "chest, shoulder & triceps", "donation": 850, "location": "x"},
     {"week": 4, "time": "PM", "date": "31-May-13", "month": "Su", "name": "Matthew 25 Ministries - OK Tornado Relief", "category": "back and biceps", "donation": 865, "location": "x"},
     {"week": 4, "time": "PM", "date": "7-Jun-13", "month": "Su", "name": "Henry Street Settlement", "category": "back and biceps", "donation": 875, "location": "x"},
+    {"week": 1, "time": "AM", "date": "8-Feb-13", "month": "M", "name": "Team Rubicon", "category": "core & abs", "donation": 95, "location": "x"},
+    {"week": 1, "time": "AM", "date": "15-Feb-13", "month": "M", "name": "Project C.U.R.E.", "category": "core & abs", "donation": 245, "location": "x"},
+    {"week": 1, "time": "AM", "date": "22-Feb-13", "month": "M", "name": "Building Tomorrow", "category": "core & abs", "donation": 430, "location": "x"},
+    {"week": 1, "time": "AM", "date": "1-Mar-13", "month": "Tu", "name": "P.S. Arts", "category": "stretch & yoga", "donation": 565, "location": "x"},
+    {"week": 2, "time": "AM", "date": "8-Mar-13", "month": "Tu", "name": "I Am That Girl", "category": "stretch & yoga", "donation": 590, "location": "x"},
+    {"week": 2, "time": "AM", "date": "15-Mar-13", "month": "W", "name": "The Adventure Project", "category": "stretch & yoga", "donation": 610, "location": "x"},
+    {"week": 3, "time": "AM", "date": "22-Mar-13", "month": "Th", "name": "Water.org", "category": "stretch & yoga", "donation": 690, "location": "x"},
+    {"week": 3, "time": "AM", "date": "29-Mar-13", "month": "Th", "name": "Can Do Multiple Sclerosis", "category": "stretch & yoga", "donation": 725, "location": "x"},
+    {"week": 3, "time": "AM", "date": "5-Apr-13", "month": "F", "name": "Bonnie J. Addario Lung Cancer Foundation", "category": "stretch & yoga", "donation": 730, "location": "x"},
+    {"week": 3, "time": "AM", "date": "12-Apr-13", "month": "F", "name": "Move For Hunger", "category": "core & abs", "donation": 740, "location": "x"},
+    {"week": 3, "time": "Lunch", "date": "19-Apr-13", "month": "Sa", "name": "TUGG Boston Marathon Fundraiser", "category": "legs", "donation": 770, "location": "x"},
+    {"week": 3, "time": "Lunch", "date": "26-Apr-13", "month": "Sa", "name": "Injured Marine Semper Fi Fund", "category": "legs", "donation": 810, "location": "x"},
+    {"week": 4, "time": "AM", "date": "3-May-13", "month": "Su", "name": "Free Wheelchair Mission", "category": "legs", "donation": 815, "location": "x"},
+    {"week": 4, "time": "PM", "date": "10-May-13", "month": "Su", "name": "Citizens For Animal Prevention", "category": "legs", "donation": 830, "location": "x"},
+    {"week": 4, "time": "PM", "date": "17-May-13", "month": "Su", "name": "American Foundation for Suicide Prevention", "category": "chest, shoulder & triceps", "donation": 850, "location": "x"},
+    {"week": 4, "time": "PM", "date": "24-May-13", "month": "Su", "name": "Team Rubicon - OK Tornado Support", "category": "chest, shoulder & triceps", "donation": 850, "location": "x"},
+    {"week": 4, "time": "PM", "date": "31-May-13", "month": "Su", "name": "Matthew 25 Ministries - OK Tornado Relief", "category": "back and biceps", "donation": 865, "location": "x"},
+    {"week": 4, "time": "PM", "date": "7-Jun-13", "month": "Su", "name": "Henry Street Settlement", "category": "back and biceps", "donation": 875, "location": "x"},
     {"week": 4, "time": "PM", "date": "14-Jun-13", "month": "Su", "name": "Action Against Hunger", "category": "legs", "donation": 885, "location": "x"}
 ];
 
 var tip = d3.tip()
     .attr('class', 'd3-tip')
-    .html(function(d) { return 'charity: ' + '<span>' + d.name + '</span>' + '<br>' + '<span>' +'$'+ d.value + '</span>' + ' raised' + '<br>' + d.category })
+    //.html(function(d) { return 'charity: ' + '<span>' + d.name + '</span>' + '<br>' + '<span>' +'$'+ d.value + '</span>' + ' raised' + '<br>' + d.category })
     //.html(function(d) { return d.name; })
+    .html(function(d) { return d.category })
     .offset([-12, 0]);
 
 var buttonAll = d3.select("#buttons")
     .append("input")
     //.attr("class", "btn btn-large btn-block btn-primary")
-    .attr("class", "btn")
+    .attr("class", "btn btn-xs btn-info")
     .attr("id", "button_all")
     .attr("type","button")
-    .attr("value", "All donations");
+    .attr("value", "All workouts");
 
 var buttonWeekly = d3.select("#buttons")
     .append("input")
-    .attr("class", "btn")
+    .attr("class", "btn btn-default btn-xs")
     .attr("id", "button_weekly")
     .attr("type","button")
-    .attr("value", "Monthly donations");
+    .attr("value", "Days");
 
 var buttonCategory = d3.select("#buttons")
     .append("input")
-    .attr("class", "btn")
+    .attr("class", "btn btn-xs")
     .attr("id", "button_category")
     .attr("type","button")
-    .attr("value", "Charity class");
+    .attr("value", "Category of Workouts");
 
 var width = 1000,
 	height = 600,
@@ -265,8 +284,8 @@ buttonWeekly
         vis.selectAll(".rows").remove();
 
         //column labeling
-        var meetups_x = {"February": 200 - 50, "March": 450, "April": 700 + 50, "May": 325 - 27.5, "June": 575 + 27.5};
-        var meetups_y = {"February": 50, "March": 50, "April": 50, "May": 325, "June": 325};
+        var meetups_x = {"M": 200 - 50, "Tu": 450, "W": 700 + 50, "Th": 325 - 27.5, "F": 575 + 27.5};
+        var meetups_y = {"M": 50, "Tu": 50, "W": 50, "Th": 325, "F": 325};
         var meetups_x_data = d3.keys(meetups_x)
         //var meetups_y_data = d3.keys(meetups_y)
         var columnlabels = vis.selectAll("body")
@@ -307,23 +326,18 @@ buttonCategory
         vis.selectAll(".rows").remove();
 
         //column labeling
-        var meetups_x = {"Animals": 180 - 55, 
-                        "Children": 360 - 30, 
-                        "Disaster relief": 540 + 10, 
-                        "Education": 720 + 55, 
-                        "Health & Wellness": 180 - 55, 
-                        "Human rights": 360 - 25, 
-                        "Hunger & Water": 540 + 25, 
-                        "Womens issues": 720 + 55};
+        var meetups_x = {"core & abs": 180 - 55, 
+                        "stretch & yoga": 360 - 30, 
+                        "chest, shoulder & triceps": 540 + 10, 
+                        "back and biceps": 720 + 55, 
+                        "legs": 180 - 55};
 
-        var meetups_y = {"Animals": 50, 
-                        "Children": 50, 
-                        "Disaster relief": 50, 
-                        "Education": 50, 
-                        "Health & Wellness": 325,
-                        "Human rights": 325, 
-                        "Hunger & Water": 325, 
-                        "Womens issues": 325};
+        var meetups_y = {"core & abs": 50, 
+                        "stretch & yoga": 50, 
+                        "chest, shoulder & triceps": 50, 
+                        "back and biceps": 50, 
+                        "legs": 325};
+
 
         var meetups_x_data = d3.keys(meetups_x)
         //var meetups_y_data = d3.keys(meetups_y)

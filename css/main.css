@@ -486,7 +486,7 @@ input.text:focus {
 	width: 38px;
 	height: 5px;
 }
-
+/*
 .btn {
 	display: inline-block;
 	line-height: 1;
@@ -504,7 +504,7 @@ input.text:focus {
 .btn:hover {
 	color: #42A5F5;
 }
-
+*/
 @media ( min-width: 768px ) {
 	.btn {
 		font-size: .909rem;

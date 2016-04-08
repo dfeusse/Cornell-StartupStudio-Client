@@ -72,6 +72,98 @@ var data = [
     {"week": 4, "time": "PM", "date": "24-May-13", "month": "Su", "name": "Team Rubicon - OK Tornado Support", "category": "chest, shoulder & triceps", "donation": 850, "location": "x"},
     {"week": 4, "time": "PM", "date": "31-May-13", "month": "Su", "name": "Matthew 25 Ministries - OK Tornado Relief", "category": "back and biceps", "donation": 865, "location": "x"},
     {"week": 4, "time": "PM", "date": "7-Jun-13", "month": "Su", "name": "Henry Street Settlement", "category": "back and biceps", "donation": 875, "location": "x"},
+    {"week": 1, "time": "AM", "date": "8-Feb-13", "month": "Tu", "name": "Team Rubicon", "category": "core & abs", "donation": 95, "location": "x"},
+    {"week": 1, "time": "AM", "date": "15-Feb-13", "month": "Tu", "name": "Project C.U.R.E.", "category": "core & abs", "donation": 245, "location": "x"},
+    {"week": 1, "time": "AM", "date": "22-Feb-13", "month": "M", "name": "Building Tomorrow", "category": "core & abs", "donation": 430, "location": "x"},
+    {"week": 1, "time": "AM", "date": "1-Mar-13", "month": "Tu", "name": "P.S. Arts", "category": "stretch & yoga", "donation": 565, "location": "x"},
+    {"week": 2, "time": "AM", "date": "8-Mar-13", "month": "Tu", "name": "I Am That Girl", "category": "stretch & yoga", "donation": 590, "location": "x"},
+    {"week": 2, "time": "AM", "date": "15-Mar-13", "month": "W", "name": "The Adventure Project", "category": "stretch & yoga", "donation": 610, "location": "x"},
+    {"week": 3, "time": "AM", "date": "22-Mar-13", "month": "M", "name": "Water.org", "category": "stretch & yoga", "donation": 690, "location": "x"},
+    {"week": 3, "time": "AM", "date": "29-Mar-13", "month": "M", "name": "Can Do Multiple Sclerosis", "category": "stretch & yoga", "donation": 725, "location": "x"},
+    {"week": 3, "time": "AM", "date": "5-Apr-13", "month": "F", "name": "Bonnie J. Addario Lung Cancer Foundation", "category": "stretch & yoga", "donation": 730, "location": "x"},
+    {"week": 3, "time": "AM", "date": "12-Apr-13", "month": "F", "name": "Move For Hunger", "category": "core & abs", "donation": 740, "location": "x"},
+    {"week": 3, "time": "Lunch", "date": "19-Apr-13", "month": "Sa", "name": "TUGG Boston Marathon Fundraiser", "category": "back and biceps", "donation": 770, "location": "x"},
+    {"week": 3, "time": "Lunch", "date": "26-Apr-13", "month": "Sa", "name": "Injured Marine Semper Fi Fund", "category": "chest, shoulder & triceps", "donation": 810, "location": "x"},
+    {"week": 4, "time": "AM", "date": "3-May-13", "month": "Su", "name": "Free Wheelchair Mission", "category": "legs", "donation": 815, "location": "x"},
+    {"week": 4, "time": "PM", "date": "10-May-13", "month": "Su", "name": "Citizens For Animal Prevention", "category": "legs", "donation": 830, "location": "x"},
+    {"week": 4, "time": "PM", "date": "17-May-13", "month": "Su", "name": "American Foundation for Suicide Prevention", "category": "chest, shoulder & triceps", "donation": 850, "location": "x"},
+    {"week": 4, "time": "PM", "date": "24-May-13", "month": "Su", "name": "Team Rubicon - OK Tornado Support", "category": "chest, shoulder & triceps", "donation": 850, "location": "x"},
+    {"week": 4, "time": "PM", "date": "31-May-13", "month": "Su", "name": "Matthew 25 Ministries - OK Tornado Relief", "category": "back and biceps", "donation": 865, "location": "x"},
+    {"week": 4, "time": "PM", "date": "7-Jun-13", "month": "Su", "name": "Henry Street Settlement", "category": "back and biceps", "donation": 875, "location": "x"},
+    {"week": 1, "time": "AM", "date": "8-Feb-13", "month": "M", "name": "Team Rubicon", "category": "core & abs", "donation": 95, "location": "x"},
+    {"week": 1, "time": "AM", "date": "15-Feb-13", "month": "M", "name": "Project C.U.R.E.", "category": "core & abs", "donation": 245, "location": "x"},
+    {"week": 1, "time": "AM", "date": "22-Feb-13", "month": "M", "name": "Building Tomorrow", "category": "core & abs", "donation": 430, "location": "x"},
+    {"week": 1, "time": "AM", "date": "1-Mar-13", "month": "Tu", "name": "P.S. Arts", "category": "stretch & yoga", "donation": 565, "location": "x"},
+    {"week": 2, "time": "AM", "date": "8-Mar-13", "month": "Tu", "name": "I Am That Girl", "category": "stretch & yoga", "donation": 590, "location": "x"},
+    {"week": 2, "time": "AM", "date": "15-Mar-13", "month": "W", "name": "The Adventure Project", "category": "stretch & yoga", "donation": 610, "location": "x"},
+    {"week": 3, "time": "AM", "date": "22-Mar-13", "month": "Sa", "name": "Water.org", "category": "stretch & yoga", "donation": 690, "location": "x"},
+    {"week": 3, "time": "AM", "date": "29-Mar-13", "month": "Sa", "name": "Can Do Multiple Sclerosis", "category": "stretch & yoga", "donation": 725, "location": "x"},
+    {"week": 3, "time": "AM", "date": "5-Apr-13", "month": "F", "name": "Bonnie J. Addario Lung Cancer Foundation", "category": "stretch & yoga", "donation": 730, "location": "x"},
+    {"week": 3, "time": "AM", "date": "12-Apr-13", "month": "F", "name": "Move For Hunger", "category": "core & abs", "donation": 740, "location": "x"},
+    {"week": 3, "time": "Lunch", "date": "19-Apr-13", "month": "Sa", "name": "TUGG Boston Marathon Fundraiser", "category": "legs", "donation": 770, "location": "x"},
+    {"week": 3, "time": "Lunch", "date": "26-Apr-13", "month": "Sa", "name": "Injured Marine Semper Fi Fund", "category": "legs", "donation": 810, "location": "x"},
+    {"week": 4, "time": "AM", "date": "3-May-13", "month": "Su", "name": "Free Wheelchair Mission", "category": "legs", "donation": 815, "location": "x"},
+    {"week": 4, "time": "PM", "date": "10-May-13", "month": "Su", "name": "Citizens For Animal Prevention", "category": "legs", "donation": 830, "location": "x"},
+    {"week": 4, "time": "PM", "date": "17-May-13", "month": "Su", "name": "American Foundation for Suicide Prevention", "category": "chest, shoulder & triceps", "donation": 850, "location": "x"},
+    {"week": 4, "time": "PM", "date": "24-May-13", "month": "Su", "name": "Team Rubicon - OK Tornado Support", "category": "chest, shoulder & triceps", "donation": 850, "location": "x"},
+    {"week": 4, "time": "PM", "date": "31-May-13", "month": "Su", "name": "Matthew 25 Ministries - OK Tornado Relief", "category": "back and biceps", "donation": 865, "location": "x"},
+    {"week": 4, "time": "PM", "date": "7-Jun-13", "month": "Su", "name": "Henry Street Settlement", "category": "back and biceps", "donation": 875, "location": "x"},
+    {"week": 1, "time": "AM", "date": "8-Feb-13", "month": "Tu", "name": "Team Rubicon", "category": "core & abs", "donation": 95, "location": "x"},
+    {"week": 1, "time": "AM", "date": "15-Feb-13", "month": "Tu", "name": "Project C.U.R.E.", "category": "core & abs", "donation": 245, "location": "x"},
+    {"week": 1, "time": "AM", "date": "22-Feb-13", "month": "M", "name": "Building Tomorrow", "category": "core & abs", "donation": 430, "location": "x"},
+    {"week": 1, "time": "AM", "date": "1-Mar-13", "month": "Tu", "name": "P.S. Arts", "category": "stretch & yoga", "donation": 565, "location": "x"},
+    {"week": 2, "time": "AM", "date": "8-Mar-13", "month": "Tu", "name": "I Am That Girl", "category": "stretch & yoga", "donation": 590, "location": "x"},
+    {"week": 2, "time": "AM", "date": "15-Mar-13", "month": "W", "name": "The Adventure Project", "category": "stretch & yoga", "donation": 610, "location": "x"},
+    {"week": 3, "time": "AM", "date": "22-Mar-13", "month": "M", "name": "Water.org", "category": "stretch & yoga", "donation": 690, "location": "x"},
+    {"week": 3, "time": "AM", "date": "29-Mar-13", "month": "M", "name": "Can Do Multiple Sclerosis", "category": "stretch & yoga", "donation": 725, "location": "x"},
+    {"week": 3, "time": "AM", "date": "5-Apr-13", "month": "F", "name": "Bonnie J. Addario Lung Cancer Foundation", "category": "stretch & yoga", "donation": 730, "location": "x"},
+    {"week": 3, "time": "AM", "date": "12-Apr-13", "month": "F", "name": "Move For Hunger", "category": "core & abs", "donation": 740, "location": "x"},
+    {"week": 3, "time": "Lunch", "date": "19-Apr-13", "month": "Th", "name": "TUGG Boston Marathon Fundraiser", "category": "back and biceps", "donation": 770, "location": "x"},
+    {"week": 3, "time": "Lunch", "date": "26-Apr-13", "month": "Th", "name": "Injured Marine Semper Fi Fund", "category": "chest, shoulder & triceps", "donation": 810, "location": "x"},
+    {"week": 4, "time": "AM", "date": "3-May-13", "month": "Su", "name": "Free Wheelchair Mission", "category": "legs", "donation": 815, "location": "x"},
+    {"week": 4, "time": "PM", "date": "10-May-13", "month": "Su", "name": "Citizens For Animal Prevention", "category": "legs", "donation": 830, "location": "x"},
+    {"week": 4, "time": "PM", "date": "17-May-13", "month": "Su", "name": "American Foundation for Suicide Prevention", "category": "chest, shoulder & triceps", "donation": 850, "location": "x"},
+    {"week": 4, "time": "PM", "date": "24-May-13", "month": "Su", "name": "Team Rubicon - OK Tornado Support", "category": "chest, shoulder & triceps", "donation": 850, "location": "x"},
+    {"week": 4, "time": "PM", "date": "31-May-13", "month": "Su", "name": "Matthew 25 Ministries - OK Tornado Relief", "category": "back and biceps", "donation": 865, "location": "x"},
+    {"week": 4, "time": "PM", "date": "7-Jun-13", "month": "Su", "name": "Henry Street Settlement", "category": "back and biceps", "donation": 875, "location": "x"},
+    {"week": 1, "time": "AM", "date": "8-Feb-13", "month": "M", "name": "Team Rubicon", "category": "core & abs", "donation": 95, "location": "x"},
+    {"week": 1, "time": "AM", "date": "15-Feb-13", "month": "M", "name": "Project C.U.R.E.", "category": "core & abs", "donation": 245, "location": "x"},
+    {"week": 1, "time": "AM", "date": "22-Feb-13", "month": "M", "name": "Building Tomorrow", "category": "core & abs", "donation": 430, "location": "x"},
+    {"week": 1, "time": "AM", "date": "1-Mar-13", "month": "Tu", "name": "P.S. Arts", "category": "stretch & yoga", "donation": 565, "location": "x"},
+    {"week": 2, "time": "AM", "date": "8-Mar-13", "month": "Tu", "name": "I Am That Girl", "category": "stretch & yoga", "donation": 590, "location": "x"},
+    {"week": 2, "time": "AM", "date": "15-Mar-13", "month": "W", "name": "The Adventure Project", "category": "stretch & yoga", "donation": 610, "location": "x"},
+    {"week": 3, "time": "AM", "date": "22-Mar-13", "month": "Sa", "name": "Water.org", "category": "stretch & yoga", "donation": 690, "location": "x"},
+    {"week": 3, "time": "AM", "date": "29-Mar-13", "month": "Sa", "name": "Can Do Multiple Sclerosis", "category": "stretch & yoga", "donation": 725, "location": "x"},
+    {"week": 3, "time": "AM", "date": "5-Apr-13", "month": "F", "name": "Bonnie J. Addario Lung Cancer Foundation", "category": "stretch & yoga", "donation": 730, "location": "x"},
+    {"week": 3, "time": "AM", "date": "12-Apr-13", "month": "F", "name": "Move For Hunger", "category": "core & abs", "donation": 740, "location": "x"},
+    {"week": 3, "time": "Lunch", "date": "19-Apr-13", "month": "Th", "name": "TUGG Boston Marathon Fundraiser", "category": "legs", "donation": 770, "location": "x"},
+    {"week": 3, "time": "Lunch", "date": "26-Apr-13", "month": "Th", "name": "Injured Marine Semper Fi Fund", "category": "legs", "donation": 810, "location": "x"},
+    {"week": 4, "time": "AM", "date": "3-May-13", "month": "Su", "name": "Free Wheelchair Mission", "category": "legs", "donation": 815, "location": "x"},
+    {"week": 4, "time": "PM", "date": "10-May-13", "month": "Su", "name": "Citizens For Animal Prevention", "category": "legs", "donation": 830, "location": "x"},
+    {"week": 4, "time": "PM", "date": "17-May-13", "month": "Su", "name": "American Foundation for Suicide Prevention", "category": "chest, shoulder & triceps", "donation": 850, "location": "x"},
+    {"week": 4, "time": "PM", "date": "24-May-13", "month": "Su", "name": "Team Rubicon - OK Tornado Support", "category": "chest, shoulder & triceps", "donation": 850, "location": "x"},
+    {"week": 4, "time": "PM", "date": "31-May-13", "month": "Su", "name": "Matthew 25 Ministries - OK Tornado Relief", "category": "back and biceps", "donation": 865, "location": "x"},
+    {"week": 4, "time": "PM", "date": "7-Jun-13", "month": "Su", "name": "Henry Street Settlement", "category": "back and biceps", "donation": 875, "location": "x"},
+        {"week": 4, "time": "PM", "date": "31-May-13", "month": "Su", "name": "Matthew 25 Ministries - OK Tornado Relief", "category": "back and biceps", "donation": 865, "location": "x"},
+    {"week": 4, "time": "PM", "date": "7-Jun-13", "month": "Su", "name": "Henry Street Settlement", "category": "back and biceps", "donation": 875, "location": "x"},
+    {"week": 1, "time": "AM", "date": "8-Feb-13", "month": "M", "name": "Team Rubicon", "category": "core & abs", "donation": 95, "location": "x"},
+    {"week": 1, "time": "AM", "date": "15-Feb-13", "month": "M", "name": "Project C.U.R.E.", "category": "core & abs", "donation": 245, "location": "x"},
+    {"week": 1, "time": "AM", "date": "22-Feb-13", "month": "M", "name": "Building Tomorrow", "category": "core & abs", "donation": 430, "location": "x"},
+    {"week": 1, "time": "AM", "date": "1-Mar-13", "month": "Tu", "name": "P.S. Arts", "category": "stretch & yoga", "donation": 565, "location": "x"},
+    {"week": 2, "time": "AM", "date": "8-Mar-13", "month": "Tu", "name": "I Am That Girl", "category": "stretch & yoga", "donation": 590, "location": "x"},
+    {"week": 2, "time": "AM", "date": "15-Mar-13", "month": "W", "name": "The Adventure Project", "category": "stretch & yoga", "donation": 610, "location": "x"},
+    {"week": 3, "time": "AM", "date": "22-Mar-13", "month": "Sa", "name": "Water.org", "category": "stretch & yoga", "donation": 690, "location": "x"},
+    {"week": 3, "time": "AM", "date": "29-Mar-13", "month": "Sa", "name": "Can Do Multiple Sclerosis", "category": "stretch & yoga", "donation": 725, "location": "x"},
+    {"week": 3, "time": "AM", "date": "5-Apr-13", "month": "F", "name": "Bonnie J. Addario Lung Cancer Foundation", "category": "stretch & yoga", "donation": 730, "location": "x"},
+    {"week": 3, "time": "AM", "date": "12-Apr-13", "month": "F", "name": "Move For Hunger", "category": "core & abs", "donation": 740, "location": "x"},
+    {"week": 3, "time": "Lunch", "date": "19-Apr-13", "month": "Th", "name": "TUGG Boston Marathon Fundraiser", "category": "legs", "donation": 770, "location": "x"},
+    {"week": 3, "time": "Lunch", "date": "26-Apr-13", "month": "Th", "name": "Injured Marine Semper Fi Fund", "category": "legs", "donation": 810, "location": "x"},
+    {"week": 4, "time": "AM", "date": "3-May-13", "month": "Su", "name": "Free Wheelchair Mission", "category": "legs", "donation": 815, "location": "x"},
+    {"week": 4, "time": "PM", "date": "10-May-13", "month": "Su", "name": "Citizens For Animal Prevention", "category": "legs", "donation": 830, "location": "x"},
+    {"week": 4, "time": "PM", "date": "17-May-13", "month": "Su", "name": "American Foundation for Suicide Prevention", "category": "chest, shoulder & triceps", "donation": 850, "location": "x"},
+    {"week": 4, "time": "PM", "date": "24-May-13", "month": "Su", "name": "Team Rubicon - OK Tornado Support", "category": "chest, shoulder & triceps", "donation": 850, "location": "x"},
+    {"week": 4, "time": "PM", "date": "31-May-13", "month": "Su", "name": "Matthew 25 Ministries - OK Tornado Relief", "category": "back and biceps", "donation": 865, "location": "x"},
+    {"week": 4, "time": "PM", "date": "7-Jun-13", "month": "Su", "name": "Henry Street Settlement", "category": "back and biceps", "donation": 875, "location": "x"},
     {"week": 4, "time": "PM", "date": "14-Jun-13", "month": "Su", "name": "Action Against Hunger", "category": "legs", "donation": 885, "location": "x"}
 ];
 
@@ -116,7 +208,7 @@ var buttonTime = d3.select("#buttons")
     .attr("value", "Time of Workouts");
 
 var width = 1000,
-	height = 600,
+	height = 550,
 	layout_gravity = -0.01,
 	damper = 0.1,
 	nodes = [],
@@ -133,7 +225,7 @@ var month_centers = {
     "Th": {x: 140, y: 400},
     "F": {x: 350, y: 400},
     "Sa": {x: 525, y: 400},
-    "Su": {x: 740, y: 400}
+    "Su": {x: 720, y: 400}
     //"31": {x: width - 160, y: 400}
 };
 /*
@@ -151,7 +243,7 @@ var category_centers = {
 var category_centers = {
     "core & abs": {x: 200, y: 175},
     "stretch & yoga": {x: 450, y: 175},
-    "chest, shoulder & triceps": {x: 700, y: 175},
+    "chest, shoulder & triceps": {x: 680, y: 175},
     "back and biceps": {x: 325, y: 400},
     "legs": {x: 575, y: 400}
 };
@@ -164,7 +256,7 @@ var time_centers = {
 
 var fill_color = d3.scale.ordinal()
 	.domain(["core & abs", "stretch & yoga", "chest, shoulder & triceps", "back and biceps", "legs"])
-	.range(["#d71028","#FAD640", "black", "white", "steelblue",]);
+	.range(["#85144b","#14898a", "black", "#ddd", "#144b85",]);
 
 //var max_amount = d3.max(data, function(d) {return parseInt(d.donation, 10); });
 var max_amount = d3.max(data, function(d) {return d.donation;});
@@ -179,7 +271,7 @@ data.forEach(function(d) {
 		id: d.week,
         date: d.date,
 		//radius: radius_scale(parseInt(d.donation, 10)),
-        radius: 8,
+        radius: 6,
         value: d.donation,
 		name: d.name,
 		//group: d.group,
@@ -253,8 +345,8 @@ force.gravity(-0.01)
 	});
 
 //column labeling
- var meetups_x = {"M": 200 - 70, "Tu": 430, "W": 700 + 30, "Th": 140 - 37.5, "F": 300, "Sa": 525 - 27.5, "Su": 740 + 27.5};
-        var meetups_y = {"M": 50, "Tu": 50, "W": 50, "Th": 320, "F": 320, "Sa": 320, "Su": 320};
+var meetups_x = {"M": 200 - 75, "Tu": 430 - 20, "W": 700, "Th": 140 - 50, "F": 325, "Sa": 523, "Su": 750};
+var meetups_y = {"M": 60, "Tu": 50, "W": 50, "Th": 320, "F": 320, "Sa": 320, "Su": 320};
 var meetups_x_data = d3.keys(meetups_x)
 //var meetups_y_data = d3.keys(meetups_y)
 var columnlabels = vis.selectAll("body")
@@ -338,8 +430,8 @@ buttonWeekly
         vis.selectAll(".rows").remove();
 
         //column labeling
-        var meetups_x = {"M": 200 - 50, "Tu": 450, "W": 700 + 50, "Th": 140 - 27.5, "F": 350 + 27.5, "Sa": 525 - 27.5, "Su": 740 + 27.5};
-        var meetups_y = {"M": 50, "Tu": 50, "W": 50, "Th": 325, "F": 400, "Sa": 400 - 27.5, "Su": 400 + 27.5};
+var meetups_x = {"M": 200 - 75, "Tu": 430 - 20, "W": 700, "Th": 140 - 50, "F": 325, "Sa": 523, "Su": 750};
+var meetups_y = {"M": 60, "Tu": 50, "W": 50, "Th": 320, "F": 320, "Sa": 320, "Su": 320};
         var meetups_x_data = d3.keys(meetups_x)
         //var meetups_y_data = d3.keys(meetups_y)
         var columnlabels = vis.selectAll("body")
@@ -380,15 +472,15 @@ buttonCategory
         vis.selectAll(".rows").remove();
 
         //column labeling
-        var meetups_x = {"core & abs": 200 - 40, 
+        var meetups_x = {"core & abs": 200 - 55, 
                         "stretch & yoga": 450 - 10, 
-                        "chest, shoulder & triceps": 700, 
-                        "back and biceps": 325 - 20, 
-                        "legs": 575};
+                        "chest, shoulder & triceps": 710, 
+                        "back and biceps": 300, 
+                        "legs": 590};
 
-        var meetups_y = {"core & abs": 175 - 90, 
-                        "stretch & yoga": 175 - 90, 
-                        "chest, shoulder & triceps": 175 - 90, 
+        var meetups_y = {"core & abs": 165 - 90, 
+                        "stretch & yoga": 165 - 90, 
+                        "chest, shoulder & triceps": 165 - 90, 
                         "back and biceps": 400 - 60, 
                         "legs": 400 - 60};
 
@@ -432,13 +524,13 @@ buttonTime
         vis.selectAll(".rows").remove();
 
         //column labeling
-        var meetups_x = {"AM": 200 - 40, 
-                        "Lunch": 400 - 10, 
-                        "PM": 600 - 70};
+        var meetups_x = {"AM": 160, 
+                        "Lunch": 460, 
+                        "PM": 730};
 
-        var meetups_y = {"AM": 250 - 90, 
-                        "Lunch": 250 - 90, 
-                        "PM": 250 - 90};
+        var meetups_y = {"AM": 110, 
+                        "Lunch": 110, 
+                        "PM": 110};
 
         var meetups_x_data = d3.keys(meetups_x)
         //var meetups_y_data = d3.keys(meetups_y)

@@ -1,8 +1,8 @@
 #profileWallpaper {
 	width: 100%;
 }
-.img-circle {
-    border-radius: 50%;
+#annaProfile {
+	border-radius: 50%;
     margin-top: -131.25px;
 
     border: 5px solid rgba(133, 20, 75, .5);
@@ -109,4 +109,13 @@
 .button:active {
 	color: #fff;
 	background: black;
+}
+.leaderboard {
+	height: 40px;
+	width: auto;
+	border: 1px solid rgba(133, 20, 75, .5);
+	margin-right: 10px;
+}
+.imgContainer {
+	float:left;
 }

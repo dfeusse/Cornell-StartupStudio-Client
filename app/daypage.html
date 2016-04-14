@@ -38,27 +38,27 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-3">
-				<!-- <img src={{anna.img}} class="img-circle"> -->
-				<!-- <img src="../img/annaFace02.png" class="img-circle" id="annaProfile"> -->
-				<img src="../img/profilephoto.jpg" class="img-circle" id="annaProfile">
+				<img src={{anna.img}} class="img-circle" id="annaProfile">
+				<!-- <img src="../img/annaFace02.png" class="img-circle" id="annaProfile">
+				<img src="../img/profilephoto.jpg" class="img-circle" id="annaProfile"> -->
 				<h2>
-					<!-- {{ anna.name }} -->
-					Jared Sharfin
+					{{ anna.name }}
+					<!-- Jared Sharfin -->
 				</h2>
 				<p>
-					@sharfin
+					{{ anna.username }}
 				</p>
 				
 				<hr>
 
 				<div class="profileIcon">
-					<i class="fa fa-map-marker"></i> <span class="iconDesc"> New York, NY </span>
+					<i class="fa fa-map-marker"></i> <span class="iconDesc"> {{ anna.location }} </span>
 				</div>
 				<div class="profileIcon">
-					<i class="fa fa-envelope-o"></i> <span class="iconDesc"> jared@gmail.com </span>
+					<i class="fa fa-envelope-o"></i> <span class="iconDesc"> {{ anna.email }} </span>
 				</div class="profileIcon">
 				<div>
-					<i class="fa fa-clock-o"></i> <span class="iconDesc"> Joined in March, 2016 </span>
+					<i class="fa fa-clock-o"></i> <span class="iconDesc"> Joined in {{ anna.joined }} </span>
 				</div>
 
 				<hr>
@@ -98,7 +98,15 @@
 								Calories
 							</p>
 							<p class="leftHandDataPoint">
-								31,390
+								{{ getTotals()['cals'] }}
+							</p>
+						</div>
+						<div class="leftHandDataBlock">
+							<p class="subHeaderLeftColumn">
+								Avg Cal/Day
+							</p>
+							<p class="leftHandDataPoint">
+								{{ getTotals()['avgCals'] }}
 							</p>
 						</div>
 						<div class="leftHandDataBlock">
@@ -106,7 +114,7 @@
 								Minutes
 							</p>
 							<p class="leftHandDataPoint">
-								245
+								{{ getTotals()['mins'] }}
 							</p>
 						</div>
 						<div class="leftHandDataBlock">
@@ -114,7 +122,7 @@
 								Avg Min/Day
 							</p>
 							<p class="leftHandDataPoint">
-								31.5
+								{{ getTotals()['avgMins'] }}
 							</p>
 						</div>
 					</div>
@@ -152,7 +160,7 @@
 						Cardio Score
 					</p>
 					<p class="mainHeaderDataPoint">
-						76.9
+						{{ cardioScore() }}
 					</p>
 				</div>
 			</div>
@@ -162,7 +170,7 @@
 						Flexibility Score
 					</p>
 					<p class="mainHeaderDataPoint">
-						15.5
+						{{ flexibilityScore() }}
 					</p>
 				</div>
 			</div>
@@ -172,7 +180,7 @@
 						Strength Score
 					</p>
 					<p class="mainHeaderDataPoint">
-						96.1
+						{{ strengthScore() }}
 					</p>
 				</div>
 			</div>

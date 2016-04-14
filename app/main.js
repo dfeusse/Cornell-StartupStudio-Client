@@ -27,6 +27,10 @@ console.log('main.js called');
 
 		$scope.anna = {
 			name: "Anna Kournikova",
+			username: "@annak",
+			email: "annak@gmail.com",
+			location: "New York, NY",
+			joined: "March 5, 2016",
 			data: [{
 				day: "1/1",
 				exercise: "Bicep Curl",
@@ -104,7 +108,7 @@ console.log('main.js called');
 				calories: 450
 			}
 			],
-			img: "http://www.strangesports.com/images/content/133940.jpg" /*,
+			img: "../img/annaFace02.png" /*,
 			data = [{
 				day: "1/1/2016",
 				activity: "squat",
@@ -139,6 +143,25 @@ console.log('main.js called');
 
 		$scope.getLength = function() {
 			return $scope.anna.data.length;
+		};
+
+		$scope.cardioScore = function() {
+			var score;
+			for (var i = 0; i < $scope.anna.data.length; i++) {
+			}
+			return 80;
+		};
+
+		$scope.flexibilityScore = function() {
+			for (var i = 0; i < $scope.anna.data.length; i++) {
+			}
+			return 90;
+		};
+
+		$scope.strengthScore = function() {
+			for (var i = 0; i < $scope.anna.data.length; i++) {
+			}
+			return 40;
 		};
 
 	} // end of MainCtrl

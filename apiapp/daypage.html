@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<!--[if lte IE 9]><html class="no-js is-ie"><![endif]-->
+<!--[if gt IE 8]><!--><html class=no-js><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Pantomime">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+
+	<title>Pantomime</title>
+	<!-- <link rel=stylesheet href="../css/flat-ui.css"> -->
+	<link rel=stylesheet href="../css/main.css">
+	<link rel=stylesheet href="../css/profilePage.css">
+	<!--[if lte IE 8]>
+	<link rel=stylesheet href="css/ie.css">
+	<![endif]-->
+
+	<!-- external css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+		<script src="../js/vendor/modernizr.js"></script>
+		<script src="../js/vendor/respond.min.js"></script>
+
+		<style type="text/css">
+
+		</style>
+
+</head>
+
+<body ng-app="app" ng-controller="MainCtrl">
+
+	<div>
+		<img src="../img/tennisWallpaper3.png" id="profileWallpaper">
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3">
+				<img src={{anna.img}} class="img-circle" id="annaProfile">
+				<!-- <img src="../img/annaFace02.png" class="img-circle" id="annaProfile">
+				<img src="../img/profilephoto.jpg" class="img-circle" id="annaProfile"> -->
+				<h2>
+					{{ anna.name }}
+					<!-- Jared Sharfin -->
+				</h2>
+				<p>
+					{{ anna.username }}
+				</p>
+				
+				<hr>
+
+				<div class="profileIcon">
+					<i class="fa fa-map-marker"></i> <span class="iconDesc"> {{ anna.location }} </span>
+				</div>
+				<div class="profileIcon">
+					<i class="fa fa-envelope-o"></i> <span class="iconDesc"> {{ anna.email }} </span>
+				</div class="profileIcon">
+				<div>
+					<i class="fa fa-clock-o"></i> <span class="iconDesc"> Joined in {{ anna.joined }} </span>
+				</div>
+
+				<hr>
+
+				<div class="row">
+					<div class="col-lg-3">	
+						<div>
+							<i class="fa fa-calendar" id="outlineCalendarTop"></i>
+						</div>
+						<i class="fa fa-trophy"></i>
+						<i class="fa fa-trophy"></i>
+						<i class="fa fa-trophy"></i>
+						<i class="fa fa-trophy"></i>
+						<i class="fa fa-trophy"></i>
+						<i class="fa fa-trophy"></i>
+						<i class="fa fa-trophy"></i>
+						<i class="fa fa-trophy"></i>
+						<i class="fa fa-trophy"></i>
+						<i class="fa fa-trophy"></i>
+						<i class="fa fa-trophy"></i>
+						<i class="fa fa-trophy"></i>
+						<i class="fa fa-trophy"></i>
+						<i class="fa fa-trophy"></i>
+						<i class="fa fa-trophy"></i>
+						<i class="fa fa-trophy"></i>
+						<i class="fa fa-trophy"></i>
+						<i class="fa fa-trophy"></i>
+						<i class="fa fa-trophy"></i>
+						<i class="fa fa-trophy"></i>
+						<i class="fa fa-trophy"></i>
+						<i class="fa fa-trophy"></i>
+						<i class="fa fa-trophy"></i>
+					</div>
+					<div class="col-lg-9">	
+						<div class="leftHandDataBlock">
+							<p class="subHeaderLeftColumn">
+								Calories
+							</p>
+							<p class="leftHandDataPoint">
+								{{ getTotals()['cals'] }}
+							</p>
+						</div>
+						<div class="leftHandDataBlock">
+							<p class="subHeaderLeftColumn">
+								Avg Cal/Day
+							</p>
+							<p class="leftHandDataPoint">
+								{{ getTotals()['avgCals'] }}
+							</p>
+						</div>
+						<div class="leftHandDataBlock">
+							<p class="subHeaderLeftColumn">
+								Minutes
+							</p>
+							<p class="leftHandDataPoint">
+								{{ getTotals()['mins'] }}
+							</p>
+						</div>
+						<div class="leftHandDataBlock">
+							<p class="subHeaderLeftColumn">
+								Avg Min/Day
+							</p>
+							<p class="leftHandDataPoint">
+								{{ getTotals()['avgMins'] }}
+							</p>
+						</div>
+					</div>
+
+					
+
+					
+						<div class="col-lg-12">
+							<hr>
+							<p style="margin-bottom:10px">Leaderboard</p>
+							<div class="imgContainer">
+								<img src="../img/sienna.png" class="img-circle leaderboard">
+							</div>
+							<div class="imgContainer">
+								<img src="../img/annaFace01.png" class="img-circle leaderboard">
+							</div>
+							<div class="imgContainer">
+								<img src="../img/cara.png" class="img-circle leaderboard">
+							</div>
+							<div class="imgContainer">
+								<img src="../img/kate.png" class="img-circle leaderboard">
+							</div>
+							<div class="imgContainer">
+								<img src="../img/emma.png" class="img-circle leaderboard">
+							</div>
+						</div>
+					
+
+				</div>
+
+			</div>
+			<div class="col-lg-3 anna">
+				<div class="mainHeaderContainer">
+					<p class="mainHeaderP">
+						Cardio Score
+					</p>
+					<p class="mainHeaderDataPoint">
+						{{ cardioScore() }}
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-3 anna">
+				<div class="mainHeaderContainer">
+					<p class="mainHeaderP">
+						Flexibility Score
+					</p>
+					<p class="mainHeaderDataPoint">
+						{{ flexibilityScore() }}
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-3 anna">
+				<div class="mainHeaderContainer">
+					<p class="mainHeaderP">
+						Strength Score
+					</p>
+					<p class="mainHeaderDataPoint">
+						{{ strengthScore() }}
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-9">
+				<div id="visualContainer">
+					<div class="visHeaderContainer">
+						<p class="mainHeaderP">
+							Today's Activity
+						</p>
+					</div>
+					<h2 style="margin-top:30px">
+						Exercises
+					</h2>
+					<h3 style="margin-top:10px"> April 8, 2016 </h3>
+					<div class="row">
+						<div class="col-lg-3" style="margin-top:30px">
+							<div class="pull-left">
+								<img src="../img/noun_2672.png" class="bis">
+							</div>
+							<div class="pull-right">
+								<p class="subHeaderLeftColumn" style="margin-top:13px">5 reps</p>
+							</div>
+						</div>
+						<div class="col-lg-6">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="pull-right">
+								<button class="button"> <a href="firstpage.html" style="text-decoration:none">Monthly Breakdown</a> </button>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- end of row -->		
+	</div> <!-- end of container -->
+
+	<!--
+				<br>
+				<ul>
+					<li ng-repeat="ex in anna.data">
+						{{ ex.day }} , 
+						{{ ex.exercise }} for {{ ex.minutes }} minutes
+					</li>
+				</ul>
+
+			</div>
+			<div class="col-lg-3">
+				<h3>
+					Totals
+				</h3>
+				<br>
+				<p>
+					Number of days: {{ getLength() }}
+				</p>
+				<br>
+				<p>
+					Total time: {{ getTotal() }} mins
+				</p>
+			</div>
+		</div>
+		-->
+	<!--
+	<div>
+		<div>
+			<ul>
+				<li ng-repeat="item in items">
+					{{ item.name }}
+				</li>
+			</ul>
+		</div>
+	</div>
+-->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<br>
+
+				<hr>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="footer text-center">
+		<p class="fmenu">
+		<!-- <a href="index.html">HOME</a> | --> <span>@Pantomime Inc</span>
+		</p>
+	</div>	
+
+	<!--
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+	-->
+	
+	<script src="../js/angular.min.js"></script>
+	<script src="../js/angular-resource.min.js"></script>
+
+	<script type="text/javascript" src="http://mbostock.github.com/d3/d3.js"></script>
+	<script src="../js/d3.tip.js"></script>
+
+	<!-- //-end- concat_js -->
+
+	<script src="app.js"></script>
+	<script src="controller.js"></script>
+    <script src="service.js"></script>
+
+</body>
+</html>
